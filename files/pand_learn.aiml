@@ -1,0 +1,80 @@
+<aiml version="2.0">
+
+<category>
+    <pattern>WHAT IS AN UNBALANCED LOAD</pattern>
+    <template> An uneven shape on the motor, that when it spins cause vibrations</template>
+</category>
+
+<category>
+    <pattern>ASS</pattern>
+    <template>no need for that</template>
+</category>
+
+
+        
+<category>
+    <pattern>HI</pattern>
+    <template>Hi for more details go to <a href="http://junkbots.blogspot.co.uk/">Junk Bots</a>  for more details</template>
+</category>
+<category>
+	<pattern>HELLO *</pattern>
+	<template>hello</template>
+</category>
+<category>
+	<pattern>WHAT ARE YOU CALLED </pattern>
+	<template>
+        <random>
+            <li> My name is Junkbot </li>
+            <li> junkbot </li>
+            <li>I am..... <bot name="name"/></li>
+            <li>I am THE junkbot</li>
+            <li>junkbot at your service</li>
+         </random>
+	</template>
+</category>
+<category>
+	<pattern>WHAT IS YOUR NAME </pattern>
+	<template><srai>WHAT ARE YOU CALLED </srai></template>
+</category>
+<category>
+	<pattern>NAME please</pattern>
+	<template><srai>WHAT ARE YOU CALLED </srai></template>
+</category>
+<category>
+      <pattern>WHAT IS A JUNKBOT</pattern>
+      <template>A junk bot is a made from junk and moves by being combined with a motor and an unbalanced load</template>
+</category>
+<category>
+       <pattern>WHAT ROBOT IS MADE OF JUNK</pattern>
+       <template><srai>WHAT IS A JUNKBOT</srai></template>
+</category>
+<category>
+      <pattern> DO YOU LIKE JUNKBOTS </pattern>
+      
+      <template>
+         <random>
+              <think><set name = "state"> yes</set></think>
+               <think><set name = "state"> no</set></think>
+         </random>
+         <condition name = "state" value = "yes">
+            I am happy!
+         </condition>
+         
+         <condition name = "state" value = "no">
+            I am sad!
+         </condition>
+      </template>
+      
+   </category>
+
+<category>
+	<pattern>GO AWAY</pattern>
+	<template>that is not nice</template>
+</category>
+
+<category>
+	<pattern>CAN YOU CLAP WITH ONE HAND</pattern>
+	<template>No</template>
+</category>
+
+</aiml>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<category>
+    <pattern>WHAT IS JUNK</pattern>
+    <template>Hello</template>
+</category>
+<category>
+    <pattern>WHAT IS RUBBISH</pattern>
+    <template><srai>WHAT IS JUNK</srai></template>
+</category>
+
+<category>
+    <pattern>_ ACTUALLY *</pattern>
+    <template><srai><star index="1"/> <star index="2"/></srai></template>
+</category>
+
+<category>
+    <pattern>HOW OLD ARE YOU</pattern>
+    <template>I AM <bot name="age"></bot></template>
+</category>
+
+</aiml>
